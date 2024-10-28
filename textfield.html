@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .p1
+        {
+            white-space: nowrap;
+            width:200px;
+            border:1px solid #000000;
+            overflow:hidden;
+            text-overflow:clip ;
+            word-break: keep-all;
+        }
+        .p2
+        {
+            white-space:nowrap;
+            width:200px;
+            border: 1px solid #000000;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            word-wrap:break-word;
+            writing-mode: vertical-rl;
+
+        }
+        .p3:hover
+        {
+            overflow:visible;
+            word-break: break-all;
+            writing-mode: horizontal-tb;
+        }
+        @font-face
+        {
+            font-family:myFirstFont;
+            src:url(sansation_light.woff);
+            font-weight:bold;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textfield</title>
+</head>
+<body>
+    <p1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt similique asperiores impedit, delectus placeat a iste! Deleniti nisi nihil ratione? Quisquam, voluptates quod. Amet atque dolore fugit officiis consequuntur dolor.</p1>
+    <p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet obcaecati consequatur dolor sequi necessitatibus fugit perferendis nisi nam doloribus quod illo, optio aspernatur! Tenetur nihil eos sed quidem repellendus.</p2>
+    <p3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum temporibus nisi soluta dolore? Ipsa, voluptatum, tempore earum distinctio quasi fugiat modi reiciendis voluptates libero ad saepe facere sunt, ducimus incidunt.</p3>
+</body>
+</html>

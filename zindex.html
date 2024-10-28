@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.image{
+            position:left;
+            left:0px;
+            top:0px;
+            z-index:-1;
+        }
+        .container
+        {
+            position:relative;
+            overflow:visible;
+            float:right;
+            display: block;
+        }
+        .blackbox
+        {
+            position:relative;
+            z-index:1;
+            border:2px solid black;
+            height: 100px;
+            margin:30px;
+            overflow:hidden;
+            float:none;
+            display: inline-block;
+
+        }
+        .gray-box
+        {   display:inline;
+            position: absolute;
+            z-index:3;
+            background: lightgray;
+            left:50px;
+            top:50px;
+            width:50px;
+            height:60px;
+            overflow:scroll;
+            float:none;
+            clear:both;
+        }
+        .green-box
+        {
+            box-sizing:border-box;
+            position:absolute;
+            z-index:2;
+            left:270px;
+            top:-15px;
+            height:100px;
+            width:35%;
+            overflow:auto;
+            clear:left;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index in css</title>
+</head>
+<body>
+    <div class="image">
+        <a href="image.gif">
+            the image is here
+
+    </div>
+    <!--<a href="image.gif">-->
+        <div class="container">
+            This is container
+        </div><br>
+        <div class="blackbox">
+            This is black box
+        </div><br>
+        <div class="gray-box">
+            This is gray box
+        </div><br>
+        <div class=" green-box">
+            This is green box
+        </div>
+
+</body>
+</html>

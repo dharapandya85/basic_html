@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .div1{
+            transform:translate(50px,100px);
+        }
+        .div2{
+           transform: rotate(20 deg);
+        }
+        .div3{
+            transform: rotate(-20deg);
+            transition-timing-function: linear;
+        }
+        .div4{
+            transform:scale(2,3);
+            transform:rotateY(150deg);
+            transition-timing-function: ease;
+        }
+        .div5
+        {
+            transform:scale(0.2,0.5);
+           transform: rotateX(150deg);
+           transition-delay:1s;
+        }
+        .div6
+        {
+            transform:scaleX(2);
+            transform:scaleY(3);
+            transform:skew(20deg,30deg);
+            transform:matrix(0,0,1,0.5);
+            transform:rotateZ(90 deg);
+            transition:width 2s;
+            background:red;
+            height:100px;
+            width:100px;
+        }
+        .div6:hover{
+            width:300px;
+            transition: width 2s,height 4s;
+        }
+
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d transform</title>
+</head>
+<body>
+    <div1>Hello</div1>
+    <div2>ok</div2>
+    <div3>ya</div3>
+    <div4>yes</div4>
+    <div5>we</div5>
+    <div6>are</div6>
+</body>
+</html>

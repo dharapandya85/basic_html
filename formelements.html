@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formelements</title>
+</head>
+<body>
+    <form >
+        <label for="cars">Choose a car</label>
+        <select id="cars" name="cars" size="3" multiple>
+        <option value="audi">audi</option>
+        <option value="fiat">fiat</option>
+        <option value="mercedes">mercedes</option>
+        </select>
+    </form>
+    <textarea name="message" rows="10" columns="20" style="width:100px;height:200px">The cat is playing in the garden</textarea>
+    <button type="buttton" onclick="alert('Hello World')">Click here</button>
+    <form action="action_page">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">fname</label><br>
+            <input type="text" id="fname" value="Dhara"><br>
+            <label for="lname">lname</label><br>
+            <input type="text" id="lname" value="Pandya"><br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+    <form action="action_page">
+        <input list="browers">
+        <datalist id="browers">
+            <option value="Firefox">
+            <option value="Opera">
+                <option value="Chrome"></option>
+            </option>
+            </option>
+        </datalist>
+    </form>
+</body>
+</html>

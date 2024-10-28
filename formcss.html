@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <style>
+        a.input{
+            width:100%;
+        }
+        b.input[type=text]
+        {
+            width:100%;
+            padding:2px 20px;
+            margin:8px 0;
+            box-sizing: border-box;
+        }
+        c.input[type=text]
+        {
+            border: 2px solid red;
+            border-radius: 4px;
+        }
+        d.input[type=text]
+        {
+            border:none;
+            border-bottom:2px solid red;
+        }
+        e.input[type=text]
+        {
+            background-color:#3CBC8D;
+            color:white;
+        }
+        f.input[type=text]:focus
+        {
+            border: 3px solid #555;
+            background-color: lightblue;
+            width:100%;
+        }
+        g.input[type=text]
+        {
+            background-color:white;
+            background-image:url('searchicon.png');
+            background-position:10px 10px;
+            background-repeat:no-repeat;
+            padding-left: 40px;
+            transition:width 0.4 ease-in-out;
+        }
+        textarea{
+            width:100px;
+            padding:12px 20px;
+            box-sizing: border-box;
+            height: 150px;
+            border: 2px solid #ccc;
+            border-radius:4px;
+            resize:none;
+            background: color #f8f8f8;
+
+
+        }
+        select{
+            width:100%;
+            padding: 16px 20px;
+            border:none;
+            border-radius:4px;
+            background-color:#f1f1f1;
+        }
+        input[type=button],input[type=submit],input[type=reset]
+        {
+            background-color:#04AA6D;
+            border:none;
+            color:white;
+            padding:16px 20px;
+            text-decoration:none;
+            margin:2px 4px;
+            cursor:pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form css</title>
+</head>
+<body>
+    <input>
+        <label for="fname">fname</label>
+        <input type="a.input" id="fname" name="fname" value="Dhara">
+
+        <label for ="lname">lname</label>
+        <input type="b.input" id="lname" name="lname" value="Pandya">
+
+        <label for="address">address</label>
+        <input type="c.input" id="address" name="address" value="Banswara">
+
+        <label for="contact">contact</label>
+        <input type="d.input" name="contact" value="89494895833">
+
+        <label for="gender">gender</label>
+        <input type="e.input" name="gender" value="Female">
+
+        <label for="age">age</label>
+        <input type="f.input" name="age" value="21">
+
+        <label for="nationality">nationality</label>
+        <input type="g.input" name="nationality" value="Indian">
+
+        <textarea> This is area field</textarea>
+        <select type="text"> Select this field</select>
+        <input type="button" type="submit" type="reset"> Submit the details here</input>
+    </form>
+</body>
+</html>
